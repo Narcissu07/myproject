@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.*;
 import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication(scanBasePackages = "com.tr")
-@MapperScan(basePackages = "com.tr.demoboot.dal.mybatis.mapper")
+@MapperScan(basePackages = "com.tr.myproject.dal.mybatis.mapper")
 public class Application {
 
     public static void main(String[] args) throws Exception {

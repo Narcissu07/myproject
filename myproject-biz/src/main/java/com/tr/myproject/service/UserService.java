@@ -1,7 +1,7 @@
 package com.tr.myproject.service;
 
-import com.tr.demoboot.dal.mybatis.mapper.UserPOMapper;
-import com.tr.demoboot.dal.mybatis.model.UserPO;
+import com.tr.myproject.dal.mybatis.mapper.UserPOMapper;
+import com.tr.myproject.dal.mybatis.model.UserPO;
 import com.tr.myproject.service.request.UserRequest;
 import com.tr.myproject.common.CommonResult;
 import org.springframework.stereotype.Service;

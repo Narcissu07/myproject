@@ -1,7 +1,7 @@
 package com.tr.myproject.service;
 
-import com.tr.demoboot.dal.mybatis.mapper.OrderPOMapper;
-import com.tr.demoboot.dal.mybatis.model.OrderPO;
+import com.tr.myproject.dal.mybatis.mapper.OrderPOMapper;
+import com.tr.myproject.dal.mybatis.model.OrderPO;
 import com.tr.myproject.common.CommonResult;
 import com.tr.myproject.service.request.OrderRequest;
 import org.springframework.stereotype.Service;

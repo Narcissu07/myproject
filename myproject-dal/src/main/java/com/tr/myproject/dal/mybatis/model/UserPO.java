@@ -1,4 +1,4 @@
-package com.tr.demoboot.dal.mybatis.model;
+package com.tr.myproject.dal.mybatis.model;
 
 import javax.persistence.*;
 

@@ -1,6 +1,7 @@
-package com.tr.demoboot.dal.mybatis.mapper;
+package com.tr.myproject.dal.mybatis.mapper;
 
-import com.tr.demoboot.dal.mybatis.model.OrderPO;
+import com.tr.myproject.dal.mybatis.model.OrderPO;
+
 import java.util.List;
 
 public interface OrderPOMapper {

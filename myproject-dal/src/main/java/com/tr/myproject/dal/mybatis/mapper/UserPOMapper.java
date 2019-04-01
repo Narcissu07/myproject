@@ -1,6 +1,6 @@
-package com.tr.demoboot.dal.mybatis.mapper;
+package com.tr.myproject.dal.mybatis.mapper;
 
-import com.tr.demoboot.dal.mybatis.model.UserPO;
+import com.tr.myproject.dal.mybatis.model.UserPO;
 import tk.mybatis.mapper.common.Mapper;
 
 public interface UserPOMapper extends Mapper<UserPO> {
