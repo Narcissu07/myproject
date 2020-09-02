@@ -36,6 +36,10 @@ public class UserService {
     public CommonResult login(){
         List<UserPO> list = userPOMapper.selectAll();
 
+        UserPO userPO = new UserPO();
+        userPO.setPhone("184236955680000");
+        userPOMapper.insertSelective(userPO);
+
         CommonResult commonResult = new CommonResult();
         commonResult.setCode("200");
         commonResult.setMessage("成功");

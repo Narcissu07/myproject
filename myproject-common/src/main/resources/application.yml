@@ -1,0 +1,37 @@
+server:
+  port: 8022
+  tomcat:
+    max-threads: 1000
+    min-spare-threads: 50
+  connection-timeout: 5000
+spring:
+  profiles:
+    active: dev
+#  http:
+#    multipart:
+#      maxFileSize: -1
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/database?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+#    username: root
+#    password: root
+#    driverClassName: com.mysql.jdbc.Driver
+  jpa:
+    database: MYSQL
+    showSql: true
+    hibernate:
+      namingStrategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+mybatis:
+  configuration:
+     #配置项：开启下划线到驼峰的自动转换. 作用：将数据库字段根据驼峰规则自动注入到对象属性。
+     map-underscore-to-camel-case: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: hello

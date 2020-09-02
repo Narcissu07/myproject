@@ -35,4 +35,10 @@ public class UserController {
 		return commonResult;
 	}
 
+//	@ExceptionHandler
+//	public String doError(Exception ex) throws Exception{
+//		logger.error("系统异常：{}",ex);
+//		return ex.getMessage();
+//	}
+
 }
