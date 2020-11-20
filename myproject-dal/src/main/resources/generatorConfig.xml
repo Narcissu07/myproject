@@ -6,11 +6,11 @@
 <generatorConfiguration>
   <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
 
-    <!--<plugin type="tk.mybatis.mapper.generator.MapperPlugin">-->
-      <!--<property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>-->
-      <!--&lt;!&ndash; caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true &ndash;&gt;-->
-      <!--<property name="caseSensitive" value="true"/>-->
-    <!--</plugin>-->
+    <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+      <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+      <!-- caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true -->
+      <property name="caseSensitive" value="true"/>
+    </plugin>
 
     <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                     connectionURL="jdbc:mysql://127.0.0.1:3306/myproject"
@@ -18,14 +18,18 @@
                     password="">
     </jdbcConnection>
 
-    <javaModelGenerator targetPackage="com.tr.demoboot.dal.mybatis.model" targetProject="src/main/java"/>
+    <javaModelGenerator targetPackage="com.tr.myproject.dal.mybatis.model" targetProject="src/main/java"/>
 
     <sqlMapGenerator targetPackage="mybatis.mapper"  targetProject="src/main/resources"/>
 
-    <javaClientGenerator targetPackage="com.tr.demoboot.dal.mybatis.mapper" targetProject="src/main/java" type="XMLMAPPER" />
+    <javaClientGenerator targetPackage="com.tr.myproject.dal.mybatis.mapper" targetProject="src/main/java" type="XMLMAPPER" />
 
-    <table tableName="t_order" domainObjectName="OrderPO">
-      <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+    <!--<table tableName="t_order" domainObjectName="OrderPO">-->
+      <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+    <!--</table>-->
+    <table tableName="account_info" domainObjectName="AccountInfoPO">
+        <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
     </table>
+
   </context>
 </generatorConfiguration>
