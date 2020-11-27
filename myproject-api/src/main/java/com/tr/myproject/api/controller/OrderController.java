@@ -3,9 +3,7 @@ package com.tr.myproject.api.controller;
 import com.tr.myproject.common.CommonResult;
 import com.tr.myproject.service.OrderService;
 import com.tr.myproject.service.request.OrderRequest;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -23,4 +21,10 @@ public class OrderController {
         return orderService.findOrder(orderRequest);
     }
 
+    @RequestMapping(value = "/testOrder", method = RequestMethod.POST)
+    @ResponseBody
+    public CommonResult testOrder(@RequestBody OrderRequest orderRequest){
+        return orderService.testOrder(orderRequest);
+
+    }
 }

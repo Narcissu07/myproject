@@ -27,7 +27,7 @@
     <!--<table tableName="t_order" domainObjectName="OrderPO">-->
       <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
     <!--</table>-->
-    <table tableName="account_info" domainObjectName="AccountInfoPO">
+    <table tableName="order_info" domainObjectName="OrderInfoPO">
         <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
     </table>
 
