@@ -64,7 +64,7 @@ public class ProducerTxmsgListener implements RocketMQLocalTransactionListener {
         if(isexistTx>0){
             state=  RocketMQLocalTransactionState.COMMIT;
         }else{
-            state=  RocketMQLocalTransactionState.UNKNOWN;
+            state=  RocketMQLocalTransactionState.ROLLBACK;
         }
 
         return state;
